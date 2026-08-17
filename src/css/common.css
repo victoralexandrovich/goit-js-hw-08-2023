@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f4f5f7;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(79, 70, 229, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 80%, rgba(79, 70, 229, 0.05), transparent 40%);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  padding: 8px 12px;
+  font: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+button {
+  padding: 10px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn {
+  margin: 20px;
+  text-decoration: none;
+}
+
+.custom-btn,
+.go-btn {
+  min-width: 190px;
+  height: 44px;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: var(--color-accent);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+  outline: none;
+}
+
+.custom-btn:hover,
+.go-btn:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+
+.custom-btn:active,
+.go-btn:active {
+  transform: translateY(0);
+}
+
+.back-btn {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.back-btn:hover {
+  background-color: #f9fafb;
+  color: var(--color-text);
+}
